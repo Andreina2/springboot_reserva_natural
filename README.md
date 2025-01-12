@@ -82,3 +82,5 @@ Una reserva natural ha pedido un sistema de gestión para el control de su fauna
 ## Testing
 
 The project uses JUnit 5 for unit tests.
+
+![Diagrama de Clases](./diagram/springboot_reserva_natural.drawio.png)

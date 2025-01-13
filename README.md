@@ -82,3 +82,7 @@ Una reserva natural ha pedido un sistema de gestión para el control de su fauna
 ## Testing
 
 The project uses JUnit 5 for unit tests.
+
+## Diagrama de clase
+
+![Diagrama de Clases](./diagram/reserva_natural_diagrama_de_clases.drawio.png)

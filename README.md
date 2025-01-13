@@ -91,4 +91,4 @@ The project uses JUnit 5 for unit tests.
 ![Diagrama de Clases](./diagram/reserva_natural_diagrama_entidad_relación.drawio.png)
 
 ## Diagrama de Chen
-![Diagrama de Clases](./diagram/reserva_natural_diagrama de chen.drawio.png)
+![Diagrama de Clases](./diagram/reserva_natural_diagrama_de_chen.drawio.png)

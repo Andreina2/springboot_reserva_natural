@@ -4,6 +4,7 @@ import java.sql.Date;
 
 public class Animal {
 
+    //attributes
     private int id;
     private String name;
     private String type;
@@ -25,7 +26,7 @@ public class Animal {
         this.date = date;
     }
 
-
+    // getters y setters
     public int getId() {
         return id;
     }
@@ -95,7 +96,7 @@ public class Animal {
         this.date = date;
     }
 
-    // getters y setters
+    
     
 }
 

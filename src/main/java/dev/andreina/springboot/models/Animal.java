@@ -1,8 +1,18 @@
-package dev.andreina.springboot;
+package dev.andreina.springboot.models;
 
 import java.sql.Date;
 
+import jakarta.annotation.Generated;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
 public class Animal {
+
+    @Id
+    @GeneratedValue( strategy = GenerationType.IDENTITY) // primary key
 
     //attributes
     private int id;

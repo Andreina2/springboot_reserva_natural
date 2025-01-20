@@ -7,6 +7,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 
 @Entity
 public class Animal {
@@ -15,18 +16,22 @@ public class Animal {
     @GeneratedValue( strategy = GenerationType.IDENTITY) // primary key
 
     //attributes
-    private int id;
+    private Long id;
     private String name;
     private String type;
-    private String family;
+
+    @ManyToOne
+    private Family family; // Relación con el modelo Family
     private String gender;
-    private String country;
+
+    @ManyToOne
+    private Country country; // Relación con el modelo Country
     private  Date date;
     //private img image; //extra
 
     
     // constructor
-    public Animal(int id, String name, String type, String family, String gender, String country, Date date) {
+    public Animal(Long id, String name, String type, Family family, String gender, Country country, Date date) {
         this.id = id;
         this.name = name;
         this.type = type;
@@ -37,12 +42,12 @@ public class Animal {
     }
 
     // getters y setters
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -72,7 +77,7 @@ public class Animal {
     }
 
 
-    public void setFamily(String family) {
+    public void setFamily(Family family) {
         this.family = family;
     }
 
@@ -92,7 +97,7 @@ public class Animal {
     }
 
 
-    public void setCountry(String country) {
+    public void setCountry(Country country) {
         this.country = country;
     }
 

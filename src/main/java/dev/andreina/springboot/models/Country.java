@@ -12,22 +12,24 @@ public class Country {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     
-    private int id;
+    private Long id;
     private String country;
+
+    public Country() {}
     
 
-    public Country(int id, String country) {
+    public Country(Long id, String country) {
         this.id = id;
         this.country = country;
     }
 
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

@@ -6,6 +6,6 @@ import dev.andreina.springboot.models.Country;
 
 public interface CountryRepository extends JpaRepository <Country, Long> {
 
-    Country findByCountry (String country);
+    Country findByCountry (String countryName);
     
 }
